@@ -1,0 +1,75 @@
+{
+	"name": "template",
+	"displayName": "",
+	"description": "模版快速下载和维护插件",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.getCurrentFilePath",
+				"title": "在此文件夹生成模版文件"
+			},
+			{
+				"command": "extension.openTpCli",
+				"title": "打开topay-cli项目"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.getCurrentFilePath",
+				"key": "ctrl+f1",
+				"mac": "cmd+f1",
+				"when": "editorTextFocus"
+			}
+		],
+		"menus": {
+			"editor/context": [],
+			"explorer/context": [
+				{
+					"command": "extension.getCurrentFilePath",
+					"group": "navigation"
+				},
+				{
+					"command": "extension.openTpCli",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"child_process": "^1.0.2",
+		"eslint": "^4.11.0",
+		"fs": "0.0.1-security",
+		"http": "0.0.1-security",
+		"https": "^1.0.0",
+		"path": "^0.12.7",
+		"typescript": "^2.6.1",
+		"url": "^0.11.0",
+		"vscode": "^1.1.6"
+	},
+	"bugs": {
+		"url": "https://github.com/sxei/vscode-plugin-demo/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sxei/vscode-plugin-demo"
+	},
+	"homepage": "https://github.com/sxei/vscode-plugin-demo/blob/master/README.md",
+	"dependencies": {}
+}
