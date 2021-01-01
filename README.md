@@ -8,7 +8,7 @@
 
 ### 2.使用方式
 ##### 添加增加模版文件
-![](http://front.tpdoc.cn/static/gif/cao_template_1.gif)
+![](https://tpdoc.cn/front/static/gif/cao_template_1.gif)
 
 ##### 打开TOPAY-CLI项目
-![](http://front.tpdoc.cn/static/gif/cao_template_2.gif)
+![](https://tpdoc.cn/front/static/gif/cao_template_2.gif)
