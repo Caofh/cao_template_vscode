@@ -7,7 +7,7 @@ var template = require('./common/templateList')
 
 // 展示模版列表方法
 function showTemList(list, path) {
-  vscode.window.showQuickPick([...list, { label: '退出插件', code: 'exit' }]).then(selectedMatch => {
+  vscode.window.showQuickPick([...list]).then(selectedMatch => {
     // 如果没有选择任何一项，selectedMatch为undefined
     if (!selectedMatch) { return }
 
