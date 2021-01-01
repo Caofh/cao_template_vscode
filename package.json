@@ -3,7 +3,8 @@
 	"displayName": "",
 	"publisher": "caofanghui",
 	"description": "模版快速下载和维护插件",
-	"version": "0.0.1",
+	"icon": "src/images/logo.png",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -22,7 +23,7 @@
 			},
 			{
 				"command": "extension.openTpCli",
-				"title": "打开topay-cli项目"
+				"title": "打开TOPAY-CLI项目"
 			}
 		],
 		"keybindings": [
@@ -65,12 +66,12 @@
 		"vscode": "^1.1.6"
 	},
 	"bugs": {
-		"url": "https://github.com/sxei/vscode-plugin-demo/issues"
+		"url": "https://github.com/Caofh/cao_template_vscode/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sxei/vscode-plugin-demo"
+		"url": "https://github.com/Caofh/cao_template_vscode"
 	},
-	"homepage": "https://github.com/sxei/vscode-plugin-demo/blob/master/README.md",
+	"homepage": "https://github.com/Caofh/cao_template_vscode",
 	"dependencies": {}
 }
