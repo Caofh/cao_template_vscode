@@ -1,6 +1,7 @@
 {
-	"name": "template",
+	"name": "cao-template",
 	"displayName": "",
+	"publisher": "caofanghui",
 	"description": "模版快速下载和维护插件",
 	"version": "0.0.1",
 	"engines": {
