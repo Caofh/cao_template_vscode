@@ -11,4 +11,4 @@
 ![](https://tpdoc.cn/front/static/gif/cao_template_1.png)
 
 ##### 打开TOPAY-CLI项目
-![](https://tpdoc.cn/front/static/gif/cao_template_2.gif)
+![](https://tpdoc.cn/front/static/gif/cao_template_2.png)
