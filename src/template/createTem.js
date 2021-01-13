@@ -5,6 +5,8 @@ const fs = require('fs')
 // 获取组件目录(模版池子)
 var template = require('./common/templateList')
 
+var connectText = '-文件类型:'
+
 // 展示模版列表方法
 function showTemList(list, path) {
   vscode.window.showQuickPick([...list]).then(selectedMatch => {
@@ -28,7 +30,7 @@ function showTemList(list, path) {
 
 // 生成模版方法
 function createTem(name, path) {
-  const nameOrigin = name.split('-')[0]
+  const nameOrigin = name.split(connectText)[0]
 
   // 获取用户输入
   getInput('请输入生成文件名，注：最好指定文件后缀').then((fileName) => {
@@ -50,7 +52,7 @@ function createTem(name, path) {
     // 6s后取消interval定时
     setTimeout(() => {
       clearInterval(loop)
-    }, 5000)
+    }, 10000)
   })
 
 }
@@ -82,7 +84,7 @@ module.exports = function (context) {
       templateList.map((item) => {
         const suffix = item.template_address.split('.').slice(-1)[0]
 
-        item.label = item.template_name ? `${item.template_name}-文件类型:${suffix}` : ''
+        item.label = item.template_name ? `${item.template_name}${connectText}${suffix}` : ''
       })
       templateList.push({ label: '选择自定义私有模版' })
 
