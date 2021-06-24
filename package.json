@@ -4,7 +4,7 @@
 	"publisher": "caofanghui",
 	"description": "模版快速下载和维护插件",
 	"icon": "src/images/logo.png",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
