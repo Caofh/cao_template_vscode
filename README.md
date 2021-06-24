@@ -4,7 +4,7 @@
 
 #### 在vscode插件库中搜索“cao-template”
 #### 点击install
-
+#### 插件配套管理系统([https://tpdoc.cn/topay_cli_manage/](https://tpdoc.cn/topay_cli_manage/))
 
 ### 2.使用方式
 ##### 全局安装topay-cli脚手架([github地址](https://github.com/Caofh/tp-cli))，此vscode插件依赖脚手架
